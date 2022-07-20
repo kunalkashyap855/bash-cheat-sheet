@@ -2,13 +2,13 @@
 
 Various types of Linux/Unix commands that every software engineer should know.
 
-- [Basic Linux Commands](#basic-linux-commands)
-- [File Permission Commands](#file-permission-commands)
-- [Environment Variables Commands](#environment-variables-commands)
-- [User Management Commands](#user-management-commands)
-- [Networking Coomnds](#networking-commands)
-- [Process Commands](#process-commands)
-- [Vi Editing Commands](#vi-editing-commands)
+- [bash-cheat-sheet](#bash-cheat-sheet)
+  - [Basic Linux Commands](#basic-linux-commands)
+  - [File Permission Commands](#file-permission-commands)
+  - [Environment Variable Commands](#environment-variable-commands)
+  - [User Management Commands](#user-management-commands)
+  - [Networking Commands](#networking-commands)
+  - [Process Commands](#process-commands)
 
 ## Basic Linux Commands
 
@@ -86,4 +86,118 @@ mkdir directory_name    # Create a new directory in the present working director
 
 ```bash
 apt-get                 # Install and update packages
+```
+
+## File Permission Commands
+
+```bash
+ls -l                   # List all files with file type and access persmissions
+```
+
+```bash
+r                       # read permission
+```
+
+```bash
+w                       # write permission
+```
+
+```bash
+x                       # execute permission
+```
+
+```bash
+chown user              # Change the ownsership of a file/directory
+```
+
+```bash
+chmod user+x foo.sh     # Give the user execute permission
+```
+
+## Environment Variable Commands
+
+```bash
+echo $VARIABLE              # Display value of a variable
+```
+
+```bash
+env                         # Display all environment variables
+```
+
+```bash
+VARIABLE_NAME=variable_val  # Create a new variable
+```
+
+```bash
+unset VARIABLE_NAME         # Make variable unavailable to child processes
+```
+
+```bash
+export VARIABLE=value       # Make variable available to child processes
+```
+
+## User Management Commands
+
+```bash
+sudo adduser username                   # Add a new user
+```
+
+```bash
+sudo passwd -l 'username'               # Change password of a user
+```
+
+```bash
+sudo usermos -a 0G GROUPNAME username   # Add a user to a group
+```
+
+```bash
+finger username                         # Display information of a particular user
+```
+
+## Networking Commands
+
+```bash
+ssh user@hostname           # Connect to hostname using the user over SSH port 22
+```
+
+```bash
+ping hostname               # Make ping requests to analyze connections
+```
+
+```bash
+host hostname               # Show the IPv4 and IPv6 addresses
+```
+
+```bash
+quit OR ctrl+D              # Logout
+```
+
+## Process Commands
+
+```bash
+top                         # List all processes interactively
+```
+
+```bash
+ps all                      # List all processes
+```
+
+```bash
+ps PID                      # Show status of a particular process
+```
+
+```bash
+pidof                       # Show PID of a process
+```
+
+```bash
+bg                          # Run a process in background
+```
+
+```bash
+fg                          # Run a process in foreground
+```
+
+```bash
+kill PID                    # Kill a process
 ```
