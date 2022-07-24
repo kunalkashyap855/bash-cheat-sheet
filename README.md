@@ -4,6 +4,7 @@ Various types of Linux/Unix commands that every software engineer should know.
 
 - [bash-cheat-sheet](#bash-cheat-sheet)
   - [Basic Linux Commands](#basic-linux-commands)
+  - [File Manipulation Commands](#file-manipulation-commands)
   - [File Permission Commands](#file-permission-commands)
   - [Environment Variable Commands](#environment-variable-commands)
   - [User Management Commands](#user-management-commands)
@@ -85,7 +86,37 @@ mkdir directory_name    # Create a new directory in the present working director
 ```
 
 ```bash
+cp <PATH_TO_FILE>/foo.txt <NEW_PATH>    # Copy a file from one place to a new place
+```
+
+```bash
+cp -R <PATH_TO_DIRECTORY> <NEW_PATH>    # Copy a directory from one place to a new place
+```
+
+```bash
 apt-get                 # Install and update packages
+```
+
+## File Manipulation Commands
+
+```bash
+touch foo.txt           # Create a file
+```
+
+```bash
+echo "foo" > bar.txt    # Overwrite a file with content
+```
+
+```bash
+echo "foo" >> bar.txt   # Append to a file with content
+```
+
+```bash
+grep "foo" ./bar.txt    # Search for "foo" in file
+```
+
+```bash
+ln -s foo bar           # Create a symbolic link 'bar' to the 'foo' folder
 ```
 
 ## File Permission Commands
